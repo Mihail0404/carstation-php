@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 25 2024 г., 09:00
+-- Время создания: Июн 25 2024 г., 10:32
 -- Версия сервера: 8.0.30
 -- Версия PHP: 8.0.22
 
@@ -40,7 +40,7 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id`, `name`, `price`, `imagepath`, `quantity`) VALUES
-(1, 'Kia K5', '2000', 'img/kiak5.jpg', 1);
+(2, 'Lada Vesta', '15', 'img/ladavesta.jpg', 60);
 
 -- --------------------------------------------------------
 
@@ -60,12 +60,12 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `price`, `name`, `status`) VALUES
-(3, 900, 'Тюльпаны', 'Выполнен'),
-(4, 900, 'Тюльпаны', 'Выполнен'),
-(9, 9999, 'Гладиолус', 'Выполнен'),
-(10, 3000, 'Индивидуальный букет', 'Выполнен'),
-(12, 4000, 'Пылающий закат', 'Выполнен'),
-(16, 1500, 'Lada Vesta', 'Создан');
+(16, 1500, 'Lada Vesta', 'Выполнен'),
+(17, 2000, 'Kia K5', 'Выполнен'),
+(18, 4000, 'Hyundai Solaris', 'Выполнен'),
+(19, 5000, 'Kia Spectra', 'Выполнен'),
+(20, 4200, 'Cherry Tiggo 4 Pro', 'Выполнен'),
+(21, 3500, 'Mercedes W212', 'Создан');
 
 -- --------------------------------------------------------
 
@@ -85,14 +85,14 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `price`, `imagepath`) VALUES
-(1, 'Kia K5', 2000, 'img/kiak5.jpg'),
-(2, 'Lada Vesta', 1500, 'img/ladavesta.jpg'),
-(6, 'Hyundai Solaris', 4000, 'img/solaris.jpg'),
-(7, 'Mercedes W212', 3500, 'img/w212.jpg'),
-(8, 'Kia Spectra', 5000, 'img/spectra.jpg'),
-(9, 'Lada Xray', 4500, 'img/ladaxray.jpg'),
-(10, 'Cherry Tiggo 4 Pro', 4200, 'img/tiggo4pro.jpg'),
-(11, 'Kia Rio', 4800, 'img/kiario.jpg');
+(1, 'Kia K5', 20, 'img/kiak5.jpg'),
+(2, 'Lada Vesta', 15, 'img/ladavesta.jpg'),
+(6, 'Hyundai Solaris', 30, 'img/solaris.jpg'),
+(7, 'Mercedes W212', 35, 'img/w212.jpg'),
+(8, 'Kia Spectra', 18, 'img/spectra.jpg'),
+(9, 'Lada Xray', 19, 'img/ladaxray.jpg'),
+(10, 'Cherry Tiggo 4 Pro', 25, 'img/tiggo4pro.jpg'),
+(11, 'Kia Rio', 12, 'img/kiario.jpg');
 
 --
 -- Индексы сохранённых таблиц
@@ -124,7 +124,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT для таблицы `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT для таблицы `products`
