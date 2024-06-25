@@ -1,0 +1,34 @@
+.header-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-a {
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Цвет текста, замените на нужный */
+    font-size: 24px;
+}
+
+.header-a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px; /* Толщина подчеркивания */
+    bottom: 0;
+    left: 0;
+    background-color: #000; /* Цвет подчеркивания, замените на нужный */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 2s ease-out;
+}
+
+.header-a:hover::after {
+    transform: scaleX(1);
+}
+
+.header-a:not(:hover)::after {
+    transform: scaleX(0);
+    transition: transform 2s ease-in;
+    transform-origin: right;
+}
