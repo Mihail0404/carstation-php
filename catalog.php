@@ -32,7 +32,7 @@
                 <p class="item_title">' . $row['name'] . '</p>
                 <div class="price-btn">
                 <form action="api/catalog.php" method="POST">  
-                    <input class="add_btn" type="submit" value="Добавить за ' . $row['price'] . '₽">  
+                    <input class="add_btn" type="submit" value="Добавить за ' . $row['price'] . '₽/мин">  
                     <input type="hidden" name="id" value="' . $row['id'] . '" />
                 </form>
                 </div>
@@ -43,10 +43,10 @@
     <footer>
         <div class="footer-div">
             <a class="footer-a" href="https://t.me/" target="_blank">
-                <span style="margin-left: 5px;">Telegram</span>
+                <span style="margin-left: 5px;"><img height="28px" src="img/tg.svg" alt=""></span>
             </a>
             <a class="footer-a" href="https://vk.com/" target="_blank">
-                <span style="margin-left: 5px;">VK</span>
+                <span style="margin-left: 5px;"><img height="28px" src="img/vk.svg" alt=""></span>
             </a>
             <p class="footer-a" style="margin-bottom: 0;margin-top: 0;">+7 937-437-37-37</p>
         </div>

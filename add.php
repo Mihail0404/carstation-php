@@ -29,10 +29,10 @@
     <footer>
         <div class="footer-div">
             <a class="footer-a" href="https://t.me/" target="_blank">
-                <span style="margin-left: 5px;">Telegram</span>
+                <span style="margin-left: 5px;"><img height="28px" src="img/tg.svg" alt=""></span>
             </a>
             <a class="footer-a" href="https://vk.com/" target="_blank">
-                <span style="margin-left: 5px;">VK</span>
+                <span style="margin-left: 5px;"><img height="28px" src="img/vk.svg" alt=""></span>
             </a>
             <p class="footer-a" style="margin-bottom: 0;margin-top: 0;">+7 937-437-37-37</p>
         </div>
